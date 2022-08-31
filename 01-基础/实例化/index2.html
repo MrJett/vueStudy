@@ -1,0 +1,15 @@
+<script src="https://unpkg.com/vue@3"></script>
+
+<div id="app">{{ message }} </div>
+<script>
+    //全局创建vue 的实例
+    const { createApp } = Vue
+
+    createApp({
+        data() {
+            return {
+                message: 'hello vue2'
+            }
+        }
+    }).mount("#app");
+</script>
